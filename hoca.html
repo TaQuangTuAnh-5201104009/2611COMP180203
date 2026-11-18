@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Cá</title>
+    <style>
+        #hoca {
+            position: fixed;
+            bottom: 0;
+            border: 2px double red;
+            border-top: 0;
+            height: 400px;
+            width: 100%;
+            background-color: aqua;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #hoca img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #ca {
+            width: 120px;
+            animation: caboi 30s infinite;
+        }
+        @keyframes caboi {
+            0%   { transform: translate(0, 0); }
+            26%  { transform: translate(300px, 100px); }
+            52%  { transform: translate(800px, 250px); }
+            78%  { transform: translate(500px, 50px) rotate(-90deg); }
+            100% { transform: translate(200px, 250px); }
+        }
+
+        /* Cá mờ */
+        #camo {
+            width: 180px;
+            animation: camo 40s infinite;
+        }
+        @keyframes camo {
+            0%   { transform: translate(900px, 30px); }
+            50%  { transform: translate(100px, 180px); }
+            100% { transform: translate(900px, 30px); }
+        }
+
+        #camap {
+            width: 200px;
+            animation: mapboi 25s infinite;
+        }
+        @keyframes mapboi {
+            0%   { transform: translate(0, 150px); }
+            50%  { transform: translate(1000px, 80px); }
+            100% { transform: translate(0, 150px); }
+        }
+
+
+        #rua {
+            width: 140px;
+            animation: ruaboi 45s infinite;
+        }
+        @keyframes ruaboi {
+            0%   { transform: translate(100px, 300px); }
+            50%  { transform: translate(700px, 260px); }
+            100% { transform: translate(100px, 300px); }
+        }
+
+        #tholan1 {
+            width: 200px;
+            animation: lan1 35s infinite;
+        }
+        @keyframes lan1 {
+            0%   { transform: translate(50px, 200px); }
+            50%  { transform: translate(400px, 20px); }
+            100% { transform: translate(50px, 200px); }
+        }
+
+        #tholan2 {
+            width: 200px;
+            animation: lan2 38s infinite;
+        }
+        @keyframes lan2 {
+            0%   { transform: translate(600px, 220px); }
+            50%  { transform: translate(250px, 60px); }
+            100% { transform: translate(600px, 220px); }
+        }
+
+        #tholan3 {
+            width: 200px;
+            animation: lan3 42s infinite;
+        }
+        @keyframes lan3 {
+            0%   { transform: translate(1000px, 120px); }
+            50%  { transform: translate(650px, 230px); }
+            100% { transform: translate(1000px, 120px); }
+        }
+    </style>
+</head>
+<body>
+    <h2>Tạ Quang Tú Anh - 52.01.104.009</h2>
+    <div id="hoca">
+        <img id="ca" src="goldFishSchool.png" alt="Đàn cá vàng">
+        <img id="camo" src="faintSchool.png" alt="Đàn cá mờ">
+        <img id="camap" src="shark.png" alt="Cá mập">
+        <img id="rua" src="turtle.png" alt="Rùa">
+        <img id="tholan1" src="diver1.png" alt="Thợ lặn 1">
+        <img id="tholan2" src="diver2.png" alt="Thợ lặn 2">
+        <img id="tholan3" src="diver3.png" alt="Thợ lặn 3">
+    </div>
+</body>
+</html>
